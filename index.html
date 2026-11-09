@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informatica e Telecomunicazioni — I.S. Archimede · Open Day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SFONDO ANIMATO -->
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+  <div class="blob blob-c"></div>
+</div>
+
+<main class="deck" id="deck">
+
+  <!-- ============ 1 · COPERTINA ============ -->
+  <section class="slide" data-title="Benvenuto">
+    <div class="slide-inner cover">
+      <div class="cover-left">
+        <h1 class="cover-title" data-anim style="--d:.08s">
+          Informatica<br><span class="amp">&</span> Telecomunicazioni
+        </h1>
+        <p class="cover-sub" data-anim style="--d:.16s">
+          articolazione <span class="hl">Informatica</span>
+        </p>
+        <p class="cover-school" data-anim style="--d:.24s">
+          <svg viewBox="0 0 24 24" class="ic"><path d="M12 21s-7-5.1-7-11a7 7 0 1 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          I.S. Archimede · Treviglio (BG)
+        </p>
+      </div>
+      <div class="terminal" data-anim style="--d:.3s" aria-hidden="true">
+        <div class="terminal-bar"><i></i><i></i><i></i><span>~/archimede</span></div>
+        <div class="terminal-body" id="term"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2 · IN COSA CONSISTE ============ -->
+  <section class="slide light" data-title="In cosa consiste">
+    <div class="slide-inner">
+      <h2 data-anim style="--d:.06s">Cosa impari</h2>
+      <p class="lede" data-anim style="--d:.12s">
+        Cinque anni per diventare un tecnico capace di <b>progettare, sviluppare e gestire</b>
+        sistemi informatici, reti e applicazioni web.
+      </p>
+      <div class="skills-grid">
+        <div class="skill" data-anim style="--d:.18s">
+          <span class="skill-ic"><svg viewBox="0 0 24 24"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg></span>
+          <h3>Sviluppo software</h3><p>Applicazioni desktop, web e mobile</p>
+        </div>
+        <div class="skill" data-anim style="--d:.24s">
+          <span class="skill-ic"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span>
+          <h3>Basi di dati</h3><p>Progettazione e interrogazione SQL</p>
+        </div>
+        <div class="skill" data-anim style="--d:.3s">
+          <span class="skill-ic"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M7 11l10-4M7 13l10 4"/></svg></span>
+          <h3>Reti e sistemi</h3><p>Installazione e gestione di LAN e servizi</p>
+        </div>
+        <div class="skill" data-anim style="--d:.36s">
+          <span class="skill-ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.4-3.4 8-8 9-4.6-1-8-4.6-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>Sicurezza</h3><p>Protezione dei dati e privacy</p>
+        </div>
+        <div class="skill" data-anim style="--d:.42s">
+          <span class="skill-ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9zM4 10h-2M4 14h-2M22 10h-2M22 14h-2M10 4V2M14 4V2M10 22v-2M14 22v-2"/></svg></span>
+          <h3>Tecnologie web</h3><p>Siti, servizi e architetture online</p>
+        </div>
+        <div class="skill" data-anim style="--d:.48s">
+          <span class="skill-ic"><svg viewBox="0 0 24 24"><path d="M3 20h18M6 16l4-8 4 5 4-9"/></svg></span>
+          <h3>Analisi e progetti</h3><p>Approccio razionale al problem solving</p>
+        </div>
+        <div class="skill" data-anim style="--d:.54s">
+          <span class="skill-ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17.5" cy="9" r="2.4"/><path d="M15.5 14.6c2.9.4 5 2.7 5 5.4"/></svg></span>
+          <h3>Lavoro in team</h3><p>Gestione condivisa dei progetti</p>
+        </div>
+        <div class="skill" data-anim style="--d:.6s">
+          <span class="skill-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.4 4 5.6 4 9s-1.5 6.6-4 9c-2.5-2.4-4-5.6-4-9s1.5-6.6 4-9z"/></svg></span>
+          <h3>Inglese tecnico</h3><p>Lessico ICT per contesti internazionali</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3 · PROGRAMMA DI STUDIO ============ -->
+  <section class="slide" data-title="Programma di studio">
+    <div class="slide-inner wide">
+      <h2 data-anim style="--d:.06s">Orario settimanale</h2>
+      <div class="tables">
+        <div class="tbl-wrap" data-anim style="--d:.16s">
+          <h3 class="tbl-title">Biennio <span>1ª – 2ª</span></h3>
+          <table>
+            <thead><tr><th>Materia</th><th>1ª</th><th>2ª</th></tr></thead>
+            <tbody>
+              <tr><td>Italiano</td><td>4</td><td>4</td></tr>
+              <tr><td>Inglese</td><td>3</td><td>3</td></tr>
+              <tr><td>Storia e Geografia</td><td>3</td><td>2</td></tr>
+              <tr><td>Matematica</td><td>4</td><td>4</td></tr>
+              <tr><td>Diritto ed Economia</td><td>2</td><td>2</td></tr>
+              <tr><td>Scienze integrate (Terra e Bio)</td><td>2</td><td>2</td></tr>
+              <tr><td>Scienze integrate (Fisica)</td><td>3</td><td>3</td></tr>
+              <tr><td>Scienze integrate (Chimica)</td><td>3</td><td>3</td></tr>
+              <tr><td>Tecnologie e rappresentazione grafica</td><td>3</td><td>3</td></tr>
+              <tr class="ind"><td>Tecnologie informatiche</td><td>3</td><td>–</td></tr>
+              <tr class="ind"><td>Scienze e tecnologie applicate</td><td>–</td><td>3</td></tr>
+              <tr><td>Scienze motorie</td><td>2</td><td>2</td></tr>
+              <tr><td>Religione / alt.</td><td>1</td><td>1</td></tr>
+              <tr class="tot"><td>Totale</td><td>33</td><td>32</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tbl-wrap" data-anim style="--d:.26s">
+          <h3 class="tbl-title">Triennio <span>3ª – 4ª – 5ª</span> <em class="badge-hours">17 h/ sett. di indirizzo</em></h3>
+          <table>
+            <thead><tr><th>Materia</th><th>3ª</th><th>4ª</th><th>5ª</th></tr></thead>
+            <tbody>
+              <tr><td>Italiano</td><td>4</td><td>4</td><td>4</td></tr>
+              <tr><td>Inglese</td><td>3</td><td>3</td><td>3</td></tr>
+              <tr><td>Storia</td><td>2</td><td>2</td><td>2</td></tr>
+              <tr><td>Matematica</td><td>3</td><td>3</td><td>3</td></tr>
+              <tr><td>Economia aziendale</td><td>1</td><td>1</td><td>–</td></tr>
+              <tr class="ind"><td>Complementi di matematica</td><td>1</td><td>1</td><td>–</td></tr>
+              <tr class="ind big"><td>Informatica</td><td>6</td><td>6</td><td>6</td></tr>
+              <tr class="ind big"><td>Sistemi e reti</td><td>4</td><td>4</td><td>4</td></tr>
+              <tr class="ind"><td>TPSIT</td><td>3</td><td>3</td><td>4</td></tr>
+              <tr class="ind"><td>Telecomunicazioni</td><td>3</td><td>3</td><td>–</td></tr>
+              <tr class="ind"><td>Gestione progetto e organ. d'impresa</td><td>–</td><td>–</td><td>3</td></tr>
+              <tr><td>Scienze motorie</td><td>2</td><td>2</td><td>2</td></tr>
+              <tr><td>Religione / alt.</td><td>1</td><td>1</td><td>1</td></tr>
+              <tr class="tot"><td>Totale</td><td>33</td><td>33</td><td>32</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="footnote" data-anim style="--d:.36s">
+        In <b class="hl">azzurro</b> le materie d'indirizzo · gran parte delle ore tecniche si svolge in <b>laboratorio</b>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 4 · FOCUS SUL TRIENNIO ============ -->
+  <section class="slide light" data-title="Focus sul triennio">
+    <div class="slide-inner">
+      <h2 data-anim style="--d:.06s">Le materie di indirizzo</h2>
+      <div class="focus-grid">
+        <article class="focus-card" data-anim style="--d:.16s">
+          <div class="focus-head">
+            <span class="skill-ic"><svg viewBox="0 0 24 24"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg></span>
+            <h3>Informatica</h3>
+          </div>
+          <span class="hours">6 h/settimana</span>
+          <p>Programmazione a oggetti, applicazioni web e basi di dati: Java, Python, PHP, JavaScript, SQL.</p>
+          <div class="tags"><span>Java</span><span>Web</span><span>SQL</span></div>
+        </article>
+        <article class="focus-card" data-anim style="--d:.26s">
+          <div class="focus-head">
+            <span class="skill-ic"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M7 11l10-4M7 13l10 4"/></svg></span>
+            <h3>Sistemi e Reti</h3>
+          </div>
+          <span class="hours">4 h/settimana</span>
+          <p>Configurazione e gestione di reti LAN, server e servizi di rete, con attenzione alla sicurezza.</p>
+          <div class="tags"><span>LAN</span><span>Server</span><span>Sicurezza</span></div>
+        </article>
+        <article class="focus-card" data-anim style="--d:.36s">
+          <div class="focus-head">
+            <span class="skill-ic"><svg viewBox="0 0 24 24"><path d="M2 12a15 15 0 0 1 20 0M5.5 15.5a10 10 0 0 1 13 0M9 19a5 5 0 0 1 6 0"/><circle cx="12" cy="21.5" r="1.2"/></svg></span>
+            <h3>Telecomunicazioni</h3>
+          </div>
+          <span class="hours">3 h/settimana</span>
+          <p>Segnali, trasmissione dati e apparati: dalle reti wireless alle infrastrutture di comunicazione.</p>
+          <div class="tags"><span>Segnali</span><span>Wireless</span><span>3ª–4ª</span></div>
+        </article>
+        <article class="focus-card" data-anim style="--d:.46s">
+          <div class="focus-head">
+            <span class="skill-ic"><svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg></span>
+            <h3>TPSIT</h3>
+          </div>
+          <span class="hours">3 → 4 h/settimana</span>
+          <p>Progettazione di sistemi informatici e di telecomunicazioni: progetti integrati tra software, reti e IoT.</p>
+          <div class="tags"><span>Progettazione</span><span>IoT</span><span>Sistemi</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5 · SBOCCHI ============ -->
+  <section class="slide" data-title="Dopo il diploma">
+    <div class="slide-inner wide">
+      <h2 data-anim style="--d:.06s">Tre strade, un diploma</h2>
+      <div class="paths">
+        <article class="path" data-anim style="--d:.16s">
+          <div class="path-head">
+            <span class="skill-ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg></span>
+            <h3>Lavoro</h3>
+          </div>
+          <ul>
+            <li>Sviluppatore software e web</li>
+            <li>Sistemista e tecnico di rete</li>
+            <li>IT support / help desk</li>
+            <li>Tecnico telecomunicazioni</li>
+            <li>Freelance e concorsi pubblici</li>
+          </ul>
+        </article>
+        <article class="path featured" data-anim style="--d:.28s">
+          <span class="ribbon">Partner · percorso 5 + 2</span>
+          <div class="path-head">
+            <span class="skill-ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg></span>
+            <h3>ITS Academy</h3>
+          </div>
+          <p class="path-sub">ITS <b>Angelo Rizzoli</b> — Milano &amp; Kilometro Rosso (BG)</p>
+          <ul>
+            <li><b>2 anni</b> post-diploma ad alta specializzazione ICT</li>
+            <li>Corsi: sviluppo, cloud, cybersecurity, AI</li>
+            <li>Oltre il <b>35%</b> del tempo in azienda</li>
+            <li>~95% di occupazione a fine percorso</li>
+          </ul>
+          <figure class="ph logo-ph" data-file="assets/img/its-rizzoli.png">
+            <img src="assets/img/its-rizzoli.png" alt="ITS Academy Angelo Rizzoli">
+            <div class="ph-empty"><span>logo ITS Rizzoli</span></div>
+          </figure>
+        </article>
+        <article class="path" data-anim style="--d:.4s">
+          <div class="path-head">
+            <span class="skill-ic"><svg viewBox="0 0 24 24"><path d="m2 9 10-4.5L22 9l-10 4.5z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5M22 9v6"/></svg></span>
+            <h3>Università</h3>
+          </div>
+          <ul>
+            <li>Informatica</li>
+            <li>Ingegneria informatica</li>
+            <li>Ingegneria delle telecomunicazioni</li>
+            <li>Cybersecurity, Data Science, AI</li>
+          </ul>
+          <p class="path-note">Il diploma dà accesso a <b>tutte</b> le facoltà.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6 · EVENTI E ATTIVITÀ ============ -->
+  <section class="slide light" data-title="Eventi e attività">
+    <div class="slide-inner wide">
+      <h2 data-anim style="--d:.06s">Eventi e attività</h2>
+      <div class="collage">
+        <figure class="ph c1" data-anim style="--d:.14s" data-file="assets/img/eventi/hackersgen.jpg">
+          <img src="assets/img/eventi/hackersgen.jpg" alt="HackersGen">
+          <div class="ph-empty"><span>assets/img/eventi/hackersgen.jpg</span></div>
+          <figcaption><b>HackersGen</b> · evento di cybersecurity</figcaption>
+        </figure>
+        <figure class="ph c2" data-anim style="--d:.2s" data-file="assets/img/eventi/olimpiadi.jpg">
+          <img src="assets/img/eventi/olimpiadi.jpg" alt="Olimpiadi di informatica">
+          <div class="ph-empty"><span>assets/img/eventi/olimpiadi.jpg</span></div>
+          <figcaption><b>Olimpiadi</b> e gare di programmazione</figcaption>
+        </figure>
+        <figure class="ph c3" data-anim style="--d:.26s" data-file="assets/img/eventi/robotica.jpg">
+          <img src="assets/img/eventi/robotica.jpg" alt="Robotics lab">
+          <div class="ph-empty"><span>assets/img/eventi/robotica.jpg</span></div>
+          <figcaption><b>Robotics Lab</b> · test center certificato ABB</figcaption>
+        </figure>
+        <figure class="ph c4" data-anim style="--d:.32s" data-file="assets/img/eventi/certificazioni.jpg">
+          <img src="assets/img/eventi/certificazioni.jpg" alt="Certificazioni">
+          <div class="ph-empty"><span>assets/img/eventi/certificazioni.jpg</span></div>
+          <figcaption><b>Certificazioni</b> · EiPASS e non solo</figcaption>
+        </figure>
+        <figure class="ph c5" data-anim style="--d:.38s" data-file="assets/img/eventi/progetti.jpg">
+          <img src="assets/img/eventi/progetti.jpg" alt="Progetti">
+          <div class="ph-empty"><span>assets/img/eventi/progetti.jpg</span></div>
+          <figcaption><b>Progetti di classe</b> e fiere del territorio</figcaption>
+        </figure>
+        <figure class="ph c6" data-anim style="--d:.44s" data-file="assets/img/eventi/visite.jpg">
+          <img src="assets/img/eventi/visite.jpg" alt="Visite">
+          <div class="ph-empty"><span>assets/img/eventi/visite.jpg</span></div>
+          <figcaption><b>Visite didattiche</b> e uscite sul territorio</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7 · ATTIVITÀ FSL ============ -->
+  <section class="slide" data-title="Formazione Scuola Lavoro">
+    <div class="slide-inner wide">
+      <h2 data-anim style="--d:.06s">Formazione Scuola Lavoro</h2>
+      <p class="lede" data-anim style="--d:.12s">
+        Stage in azienda, visite e incontri con professionisti: <b>la scuola che incontra il lavoro</b> già dal terzo anno.
+      </p>
+      <div class="collage collage-4">
+        <figure class="ph c1" data-anim style="--d:.18s" data-file="assets/img/fsl/stage.jpg">
+          <img src="assets/img/fsl/stage.jpg" alt="Stage in azienda">
+          <div class="ph-empty"><span>assets/img/fsl/stage.jpg</span></div>
+          <figcaption><b>Stage in azienda</b> · 80+ ore in 4ª</figcaption>
+        </figure>
+        <figure class="ph c2" data-anim style="--d:.24s" data-file="assets/img/fsl/visite.jpg">
+          <img src="assets/img/fsl/visite.jpg" alt="Visite aziendali">
+          <div class="ph-empty"><span>assets/img/fsl/visite.jpg</span></div>
+          <figcaption><b>Visite aziendali</b> nel settore ICT</figcaption>
+        </figure>
+        <figure class="ph c3" data-anim style="--d:.3s" data-file="assets/img/fsl/incontri.jpg">
+          <img src="assets/img/fsl/incontri.jpg" alt="Incontri">
+          <div class="ph-empty"><span>assets/img/fsl/incontri.jpg</span></div>
+          <figcaption><b>Incontri</b> con aziende e Maestri del Lavoro</figcaption>
+        </figure>
+        <figure class="ph c4" data-anim style="--d:.36s" data-file="assets/img/fsl/estero.jpg">
+          <img src="assets/img/fsl/estero.jpg" alt="Estero">
+          <div class="ph-empty"><span>assets/img/fsl/estero.jpg</span></div>
+          <figcaption><b>Esperienze all'estero</b> · PCTO transnazionali</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8 · AZIENDE PARTNER ============ -->
+  <section class="slide light" data-title="Aziende partner">
+    <div class="slide-inner">
+      <h2 data-anim style="--d:.06s">Insieme alle aziende</h2>
+      <p class="lede" data-anim style="--d:.12s">
+        Stage, progetti e visite nascono dalla collaborazione con le realtà del territorio.
+      </p>
+      <div class="logo-grid">
+        <figure class="ph logo" data-anim style="--d:.18s" data-file="assets/img/partner/abb.png">
+          <img src="assets/img/partner/abb.png" alt="ABB">
+          <div class="ph-empty"><span>ABB Robotics</span></div>
+        </figure>
+        <figure class="ph logo" data-anim style="--d:.24s" data-file="assets/img/partner/edoomark.png">
+          <img src="assets/img/partner/edoomark.png" alt="Edoomark">
+          <div class="ph-empty"><span>Edoomark</span></div>
+        </figure>
+        <figure class="ph logo" data-anim style="--d:.3s" data-file="assets/img/partner/partner-3.png">
+          <img src="assets/img/partner/partner-3.png" alt="Partner">
+          <div class="ph-empty"><span>logo partner</span></div>
+        </figure>
+        <figure class="ph logo" data-anim style="--d:.36s" data-file="assets/img/partner/partner-4.png">
+          <img src="assets/img/partner/partner-4.png" alt="Partner">
+          <div class="ph-empty"><span>logo partner</span></div>
+        </figure>
+        <figure class="ph logo" data-anim style="--d:.42s" data-file="assets/img/partner/partner-5.png">
+          <img src="assets/img/partner/partner-5.png" alt="Partner">
+          <div class="ph-empty"><span>logo partner</span></div>
+        </figure>
+        <figure class="ph logo" data-anim style="--d:.48s" data-file="assets/img/partner/partner-6.png">
+          <img src="assets/img/partner/partner-6.png" alt="Partner">
+          <div class="ph-empty"><span>logo partner</span></div>
+        </figure>
+        <figure class="ph logo" data-anim style="--d:.54s" data-file="assets/img/partner/partner-7.png">
+          <img src="assets/img/partner/partner-7.png" alt="Partner">
+          <div class="ph-empty"><span>logo partner</span></div>
+        </figure>
+        <figure class="ph logo" data-anim style="--d:.6s" data-file="assets/img/partner/partner-8.png">
+          <img src="assets/img/partner/partner-8.png" alt="Partner">
+          <div class="ph-empty"><span>logo partner</span></div>
+        </figure>
+      </div>
+      <p class="footnote" data-anim style="--d:.68s">… e molte altre realtà del territorio.</p>
+    </div>
+  </section>
+
+  <!-- ============ 9 · CHIUSURA ============ -->
+  <section class="slide" data-title="Fine">
+    <div class="slide-inner cover">
+      <div class="cover-left">
+        <h2 class="cover-title" data-anim style="--d:.08s">Il futuro si scrive<br>in <span class="hl">codice</span></h2>
+        <p class="cover-school" data-anim style="--d:.2s">
+          I.S. Archimede · Via Caravaggio 52, Treviglio (BG)<br>
+          <span class="mono">www.isarchimede.edu.it</span>
+        </p>
+        <p class="cover-sub small" data-anim style="--d:.3s">Ti aspettiamo.</p>
+      </div>
+      <div class="terminal" data-anim style="--d:.36s" aria-hidden="true">
+        <div class="terminal-bar"><i></i><i></i><i></i><span>~/futuro</span></div>
+        <div class="terminal-body" id="term2"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- UI DI NAVIGAZIONE -->
+<div class="progress"><span id="progressBar"></span></div>
+<nav class="dots" id="dots" aria-label="Navigazione slide"></nav>
+<button class="arrow prev" id="prev" aria-label="Slide precedente"><svg viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></svg></button>
+<button class="arrow next" id="next" aria-label="Slide successiva"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></button>
+<div class="hud">
+  <span class="hud-brand">I.S. Archimede · Informatica</span>
+  <span class="hud-count" id="counter">1 / 9</span>
+</div>
+<p class="keys-hint">← → spazio · F schermo intero</p>
+
+<script src="js/main.js"></script>
+</body>
+</html>
