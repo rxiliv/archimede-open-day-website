@@ -31,7 +31,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-::selection { background: var(--accent); color: var(--ink); }
+::selection { background: var(--navy); color: #fff; }
 
 /* ---------- sfondo ---------- */
 .bg { position: fixed; inset: 0; z-index: 0; overflow: hidden; }
@@ -57,7 +57,11 @@ body {
 .slide {
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
-  background: rgba(26, 37, 97, .62);
+  background: rgba(49, 135, 232, .92);
+  --muted:     rgba(247, 249, 249, .8);
+  --accent-2:  #d9e8ff;
+  --glass:     rgba(247, 249, 249, .09);
+  --glass-brd: rgba(247, 249, 249, .25);
   opacity: 0; visibility: hidden;
   transform: scale(.985);
   transition: opacity .9s var(--ease), transform .9s var(--ease), visibility 0s .9s;
@@ -148,7 +152,7 @@ h2 {
   margin-bottom: 1.4rem;
 }
 .cover-title .amp {
-  color: var(--accent);
+  color: var(--navy);
   font-weight: 500;
 }
 .cover-sub {
@@ -270,7 +274,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
   font-size: .8rem;
   letter-spacing: .05em;
   color: var(--accent-2);
-  border: 1px solid rgba(49,135,232,.45);
+  border: 1px solid rgba(255,255,255,.45);
   border-radius: 99px;
   padding: .35rem .8rem;
   margin-left: auto;
@@ -298,12 +302,12 @@ thead th {
 thead th:not(:first-child), td:not(:first-child) { text-align: center; }
 tbody td {
   padding: .5rem .9rem;
-  border-bottom: 1px solid rgba(247,249,249,.06);
+  border-bottom: 1px solid rgba(247,249,249,.12);
   color: var(--muted);
 }
 tbody td:first-child { color: rgba(247,249,249,.82); }
 tbody tr:last-child td { border-bottom: none; }
-tbody tr.ind td { background: rgba(49,135,232,.1); }
+tbody tr.ind td { background: rgba(26,37,97,.3); }
 tbody tr.ind td:first-child { color: var(--accent-2); font-weight: 600; }
 tbody tr.ind td:not(:first-child) { color: var(--paper); font-weight: 600; }
 tbody tr.big td:not(:first-child) { font-weight: 700; }
@@ -311,8 +315,8 @@ tbody tr.tot td {
   font-family: var(--font-head);
   font-weight: 700;
   color: var(--paper);
-  background: rgba(0, 88, 148, .32);
-  border-top: 1px solid rgba(49,135,232,.4);
+  background: rgba(26, 37, 97, .45);
+  border-top: 1px solid rgba(255,255,255,.35);
 }
 
 /* ---------- slide 4 · focus triennio ---------- */
@@ -417,7 +421,7 @@ tbody tr.tot td {
 .path li::before {
   content: "→";
   position: absolute; left: 0;
-  color: var(--accent);
+  color: var(--accent-2);
 }
 .path li b { color: var(--paper); }
 .path-note { margin-top: 1rem; font-size: .95rem; color: var(--muted); }
@@ -437,7 +441,7 @@ tbody tr.tot td {
 .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .ph.missing {
   border-style: dashed;
-  border-color: rgba(49,135,232,.4);
+  border-color: rgba(255,255,255,.45);
   display: flex; flex-direction: column;
 }
 .ph.missing .ph-empty { position: static; flex: 1; }
@@ -463,7 +467,9 @@ tbody tr.tot td {
   -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8'%3E%3Crect x='3' y='5' width='18' height='14' rx='2'/%3E%3Ccircle cx='8.5' cy='10' r='1.8'/%3E%3Cpath d='m21 15-5-5-9 9'/%3E%3C/svg%3E") center/contain no-repeat;
 }
 .ph.missing .ph-empty { display: flex; }
-.ph:hover { transform: translateY(-4px) rotate(-.4deg); border-color: rgba(49,135,232,.5); }
+.ph:hover { transform: translateY(-4px) rotate(-.4deg); border-color: rgba(255,255,255,.55); }
+.slide.light .ph.missing { border-color: rgba(49,135,232,.5); }
+.slide.light .ph:hover { border-color: rgba(49,135,232,.5); }
 .ph figcaption {
   position: absolute; left: 0; right: 0; bottom: 0;
   padding: 1.6rem 1rem .8rem;
@@ -572,13 +578,15 @@ tbody tr.tot td {
 }
 .hud-count { color: var(--accent-2); }
 
-.keys-hint {
-  position: fixed; bottom: 1.4rem; right: 1.6rem;
-  font-family: var(--font-mono);
-  font-size: .8rem;
-  color: rgba(247,249,249,.3);
-  z-index: 10;
-}
+/* UI sopra slide scure (azzurre) */
+body:not(.on-light) .hud { color: rgba(247,249,249,.85); }
+body:not(.on-light) .hud-count { color: #fff; }
+body:not(.on-light) .progress { background: rgba(247,249,249,.2); }
+body:not(.on-light) .progress span { background: #f7f9f9; }
+body:not(.on-light) .dots button { background: rgba(247,249,249,.35); }
+body:not(.on-light) .dots button:hover { background: rgba(247,249,249,.65); }
+body:not(.on-light) .dots button.active { background: #f7f9f9; }
+body:not(.on-light) .arrow:hover { background: rgba(247,249,249,.2); border-color: rgba(255,255,255,.6); }
 
 /* UI sopra slide chiare */
 body.on-light .hud { color: rgba(28,33,36,.55); }
@@ -593,7 +601,6 @@ body.on-light .arrow {
   color: var(--ink);
 }
 body.on-light .arrow:hover { background: rgba(49,135,232,.2); border-color: var(--accent); }
-body.on-light .keys-hint { color: rgba(28,33,36,.35); }
 
 /* ---------- responsive ---------- */
 @media (max-width: 1080px) {
