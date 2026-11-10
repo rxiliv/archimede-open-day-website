@@ -45,7 +45,7 @@
     progress.style.width = `${((current + 1) / slides.length) * 100}%`;
     btnPrev.disabled = current === 0;
     btnNext.disabled = current === slides.length - 1;
-    document.body.classList.toggle("on-light", slides[current].classList.contains("light"));
+    document.body.classList.toggle("on-light", !slides[current].classList.contains("dark"));
   }
 
   const next = () => go(current + 1);
@@ -124,12 +124,12 @@
     ["p", "$ indirizzo --scelto"],
     ["o", "Informatica e Telecomunicazioni"],
     ["p", "$ status"],
-    ["c", "# pronto a imparare a costruire il futuro_"],
+    ["c", "# imparo a costruire il futuro_"],
   ]);
 
   typewriter(document.getElementById("term2"), [
     ["p", "$ git commit -m \"inizia il percorso\""],
-    ["o", "[main] 5 anni · 1 diploma · ∞ possibilità"],
+    ["o", "[main] 5 anni · 1 diploma · ∞"],
     ["p", "$ ./futuro"],
     ["c", "# ci vediamo all'Archimede_"],
   ]);
