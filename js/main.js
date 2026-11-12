@@ -119,19 +119,19 @@
   }
 
   typewriter(document.getElementById("term"), [
-    ["p", "$ whoami"],
-    ["o", "studente@archimede"],
-    ["p", "$ indirizzo --scelto"],
-    ["o", "Informatica e Telecomunicazioni"],
-    ["p", "$ status"],
-    ["c", "# imparo a costruire il futuro_"],
+    ["p", "$ benvenuti --in archimede"],
+    ["o", "open day · indirizzo informatica"],
+    ["p", "$ programma --del-turno"],
+    ["o", "1 · panoramica sull'indirizzo"],
+    ["o", "2 · i progetti degli studenti"],
+    ["c", "# si comincia_"],
   ]);
 
   typewriter(document.getElementById("term2"), [
-    ["p", "$ git commit -m \"inizia il percorso\""],
-    ["o", "[main] 5 anni · 1 diploma · ∞"],
-    ["p", "$ ./futuro"],
-    ["c", "# ci vediamo all'Archimede_"],
+    ["p", "$ handoff --agli-studenti"],
+    ["o", "progetti: caricati"],
+    ["p", "$ ./dal-vivo"],
+    ["c", "# la parola a chi il futuro lo scrive già_"],
   ]);
 
   /* ---------- init ---------- */
