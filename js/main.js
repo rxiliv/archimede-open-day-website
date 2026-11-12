@@ -119,18 +119,18 @@
   }
 
   typewriter(document.getElementById("term"), [
-    ["p", "$ benvenuti --in archimede"],
+    ["p", "$ archimede --benvenuti"],
     ["o", "open day · indirizzo informatica"],
-    ["p", "$ programma --del-turno"],
+    ["p", "$ turno --programma"],
     ["o", "1 · panoramica sull'indirizzo"],
     ["o", "2 · i progetti degli studenti"],
     ["c", "# si comincia_"],
   ]);
 
   typewriter(document.getElementById("term2"), [
-    ["p", "$ handoff --agli-studenti"],
+    ["p", "$ handoff studenti"],
     ["o", "progetti: caricati"],
-    ["p", "$ ./dal-vivo"],
+    ["p", "$ ./progetti-dal-vivo"],
     ["c", "# la parola a chi il futuro lo scrive già_"],
   ]);
 
