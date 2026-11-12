@@ -202,7 +202,7 @@ h3 { font-weight: 400; }
   font-family: var(--font-mono);
   font-size: clamp(1rem, 1.3vw, 1.15rem);
   line-height: 1.9;
-  height: 14em;
+  height: 15.5em;
   overflow: hidden;
   white-space: pre-wrap;
 }

@@ -131,7 +131,7 @@
     ["p", "$ handoff studenti"],
     ["o", "progetti: caricati"],
     ["p", "$ ./progetti-dal-vivo"],
-    ["c", "# la parola a chi il futuro lo scrive già_"],
+    ["c", "# la parola a chi il progresso lo scrive già_"],
   ]);
 
   /* ---------- init ---------- */
