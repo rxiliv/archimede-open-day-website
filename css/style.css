@@ -125,7 +125,7 @@ h3 { font-weight: 400; }
 .footnote {
   margin-top: 1.4rem;
   color: var(--muted);
-  font-size: 1.05rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
 }
 
 /* ---------- copertina / chiusura ---------- */
@@ -488,7 +488,7 @@ tbody tr.tot td {
 /* ---------- placeholder immagini ---------- */
 .ph {
   position: relative;
-  background: var(--glass);
+  background: #fff;
   border: 1px solid var(--glass-brd);
   border-radius: 16px;
   overflow: hidden;
