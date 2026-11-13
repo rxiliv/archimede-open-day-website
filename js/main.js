@@ -14,31 +14,6 @@
   let current = 0;
   let animating = false;
 
-  /* ---------- gate · codice di accesso ---------- */
-  const ACCESS_CODE = "archimede2627";
-  const gate = document.getElementById("gate");
-  const gateForm = document.getElementById("gateForm");
-  const gateInput = document.getElementById("gateCode");
-  const gateErr = document.getElementById("gateErr");
-
-  if (sessionStorage.getItem("archimede-ok") !== "1") {
-    gate.hidden = false;
-    gateInput.focus();
-    gateForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      if (gateInput.value.trim().toLowerCase() === ACCESS_CODE) {
-        sessionStorage.setItem("archimede-ok", "1");
-        gate.hidden = true;
-      } else {
-        gateErr.hidden = false;
-        gateForm.classList.remove("shake");
-        void gateForm.offsetWidth;
-        gateForm.classList.add("shake");
-        gateInput.select();
-      }
-    });
-  }
-
   /* ---------- dots ---------- */
   slides.forEach((s, i) => {
     const b = document.createElement("button");
