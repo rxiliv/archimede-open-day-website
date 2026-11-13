@@ -18,6 +18,18 @@
   <div class="blob blob-c"></div>
 </div>
 
+<!-- GATE · codice di accesso -->
+<div class="gate" id="gate" hidden>
+  <form class="gate-card" id="gateForm" autocomplete="off">
+    <p class="gate-kick">I.S. Archimede · Open Day</p>
+    <h2 class="gate-title">Informatica <span class="amp">&amp;</span> Telecomunicazioni</h2>
+    <p class="gate-sub">Inserisci il codice di accesso</p>
+    <input type="text" id="gateCode" placeholder="codice" autocapitalize="none" spellcheck="false">
+    <button type="submit" class="gate-btn">Accedi</button>
+    <p class="gate-err" id="gateErr" hidden>Codice non valido, riprova.</p>
+  </form>
+</div>
+
 <main class="deck" id="deck">
 
   <!-- ============ 1 · COPERTINA ============ -->
@@ -97,9 +109,9 @@
           <table>
             <thead><tr><th>Materia</th><th>1a</th><th>2a</th></tr></thead>
             <tbody>
-              <tr class="ind"><td>Tecnologie informatiche</td><td>3</td><td>–</td></tr>
-              <tr class="ind"><td>Scienze e tecnologie applicate</td><td>–</td><td>3</td></tr>
-              <tr class="tot"><td>Totale</td><td>3</td><td>3</td></tr>
+              <tr class="ind"><td>TIC</td><td>2</td><td>2</td></tr>
+              <tr class="ind"><td>Informatica e reti di comunicazione</td><td>2</td><td>4</td></tr>
+              <tr class="tot"><td>Totale</td><td>4</td><td>6</td></tr>
             </tbody>
           </table>
           <p class="tbl-note" data-anim style="--d:.34s">
@@ -262,14 +274,9 @@
     <div class="slide-inner wide">
       <h2 data-anim style="--d:.06s">Formazione Scuola Lavoro</h2>
       <p class="lede" data-anim style="--d:.12s">
-        Stage in azienda, visite e incontri con professionisti: <b>la scuola che incontra il lavoro</b> già dal terzo anno.
+        <b>Stage in azienda da 80+ ore nel triennio</b>, visite e incontri con professionisti: la scuola che incontra il lavoro già dal terzo anno.
       </p>
       <div class="collage collage-4">
-        <figure class="ph c1" data-anim style="--d:.18s" data-file="assets/img/fsl/stage.webp">
-          <img src="assets/img/fsl/stage.webp" alt="Stage in azienda">
-          <div class="ph-empty"><span>assets/img/fsl/stage.webp</span></div>
-          <figcaption><b>Stage in azienda</b> · 80+ ore in 4ª</figcaption>
-        </figure>
         <figure class="ph c2" data-anim style="--d:.24s" data-file="assets/img/fsl/visite.webp">
           <img src="assets/img/fsl/visite.webp" alt="Visite aziendali">
           <div class="ph-empty"><span>assets/img/fsl/visite.webp</span></div>
