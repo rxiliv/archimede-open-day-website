@@ -439,7 +439,7 @@ tbody tr.tot td {
 .path-head .skill-ic { margin-bottom: 0; }
 .path-head h3 { font-family: var(--font-head); font-size: 1.5rem; }
 .path.featured .path-head h3 { color: var(--accent-2); }
-.path-sub { font-size: 1.1rem; color: var(--muted); margin: -.4rem 0 .7rem; }
+.path-sub { font-size: 1.2rem; color: var(--muted); margin: -.4rem 0 .7rem; }
 .path-sub b { color: var(--accent-2); }
 .path ul {
   list-style: none;
@@ -451,12 +451,13 @@ tbody tr.tot td {
 .path li {
   padding: .4rem 0 .4rem 1.6rem;
   position: relative;
-  color: var(--muted);
-  font-size: 1.2rem;
+  color: var(--navy);
+  font-size: 1.3rem;
   line-height: 1.4;
   border-bottom: 1px solid rgba(28, 33, 36, .08);
 }
-.path.featured li { border-bottom-color: rgba(247,249,249,.3); }
+.path.featured li { border-bottom-color: rgba(247,249,249,.3); color: var(--muted); }
+.path.featured li b { color: var(--paper); }
 .path li:last-child { border-bottom: none; }
 .path li::before {
   content: "→";
@@ -464,7 +465,7 @@ tbody tr.tot td {
   color: var(--accent-2);
 }
 .path li b { color: var(--paper); }
-.path-note { margin-top: .8rem; font-size: 1.1rem; color: var(--muted); }
+.path-note { margin-top: .8rem; font-size: 1.2rem; color: var(--muted); }
 .path-note b { color: var(--accent-2); }
 .logo-ph {
   margin-top: .9rem;
@@ -556,16 +557,20 @@ tbody tr.tot td {
 /* ---------- slide 8 · loghi ---------- */
 .logo-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.1rem;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
 }
 .logo {
-  height: clamp(110px, 18vh, 170px);
+  height: clamp(130px, 21vh, 200px);
   display: flex; align-items: center; justify-content: center;
   padding: .4rem;
   background: #ffffff;
 }
 .logo img { max-width: 92%; max-height: 88%; object-fit: contain; }
+
+/* slide aziende: titolo più in alto per lasciare spazio ai loghi */
+.slide[data-title="Aziende partner"] h2 { margin-bottom: 1.2rem; }
+.slide[data-title="Aziende partner"] .lede { margin-bottom: 1.4rem; }
 .logo .ph-empty { font-size: .85rem; letter-spacing: .04em; }
 .logo.missing .ph-empty::before { display: none; }
 
