@@ -55,6 +55,7 @@
   btnPrev.addEventListener("click", prev);
 
   document.addEventListener("keydown", (e) => {
+    if (e.target.closest?.("video")) return;
     if (["ArrowRight", "ArrowDown", "PageDown", " "].includes(e.key)) { e.preventDefault(); next(); }
     else if (["ArrowLeft", "ArrowUp", "PageUp"].includes(e.key)) { e.preventDefault(); prev(); }
     else if (e.key === "Home") go(0);
